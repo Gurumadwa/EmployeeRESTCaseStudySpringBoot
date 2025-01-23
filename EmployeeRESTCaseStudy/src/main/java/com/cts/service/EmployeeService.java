@@ -1,5 +1,7 @@
 package com.cts.service;
 
-public interface EmployeeService {
+import com.cts.entity.Employee;
 
+public interface EmployeeService {
+	public abstract String addEmployee(Employee employee);
 }
