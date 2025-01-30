@@ -1,5 +1,7 @@
 package com.cts.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.cts.entity.Department;
@@ -18,6 +20,12 @@ public class DepartmentServiceImpl implements DepartmentService{
 		
 		return departmentRepository.save(department);
 		
+	}
+
+	@Override
+	public List<Department> getAllDepartments() {
+		
+		return departmentRepository.findAll();
 	}
 
 }
